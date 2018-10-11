@@ -7,20 +7,61 @@
     tools:context="amikom.puspita.simpleaplication.MainActivity">
 
 
-    <Button
-        android:id="@+id/fragmen1"
-        android:layout_width="301dp"
-        android:layout_height="61dp"
-        android:text="GO TO FRAGMEN"
-        android:layout_centerInParent="true"
-        />
-    <Button
-        android:id="@+id/fragmen2"
-        android:layout_width="301dp"
-        android:layout_height="61dp"
-        android:text="GO TO ACTIVITY"
-        android:layout_below="@+id/fragmen1"
-        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HELLO :" />
+
+            <TextView
+                android:id="@+id/user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tambahuser"
+            android:text="add user" />
+
+        <Button
+            android:id="@+id/list_user"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:onClick="list"
+            android:text="List user" />
+
+        <Button
+            android:id="@+id/btn_frag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="kefragment"
+            android:text="Go To Fragment" />
+
+        <Button
+            android:id="@+id/btn_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go To Activity"
+            android:onClick="Pindah"/>
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>

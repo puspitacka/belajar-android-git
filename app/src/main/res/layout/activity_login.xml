@@ -7,33 +7,23 @@
     android:orientation="vertical"
     tools:context="amikom.puspita.simpleaplication.LoginActivity">
 
-    <AutoCompleteTextView
-        android:id="@+id/etEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress"
-        android:maxLines="1"
-        android:singleLine="true" />
     <EditText
-        android:id="@+id/etNama"
+        android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/prompt_password"
-        android:imeActionId="@+id/login"
-        android:imeActionLabel="@string/action_sign_in_short"
-        android:imeOptions="actionUnspecified"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:singleLine="true" />
+        android:hint="Masukkan Username"
+        />
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password" />
 
     <Button
-        android:id="@+id/email_sign_in_button"
-        style="?android:textAppearanceSmall"
-        android:layout_width="368dp"
+        android:id="@+id/button"
+        android:onClick="Login"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/action_sign_in"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:text="LOGIN" />
 </LinearLayout>
